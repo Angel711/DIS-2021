@@ -1,0 +1,130 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto Slab', serif;
+}
+/* Estilo de la calculadora */
+#calculadora {
+	width: 20%;
+	height: 550px;
+	background-color: #2e2d4d;
+	margin-left: 40%;
+	margin-top: 100px;
+	border-radius: 10px;
+	padding: 30px;
+}
+.Oscuro {
+	background-color: #001d3d;
+}
+
+.Claro {
+	background: white !important;
+}
+.toscuro {
+	color: black !important;
+}
+
+.tclaro {
+	color: black;
+}
+
+.Activado {
+	color: white !important;
+}
+.boton {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background-color: #a1e8af;
+	float: left;
+	border-radius: 50%;
+}
+.boton > h4 {
+	margin-top: 13px;
+}
+.botonOp {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background-color: #dba8ac;
+	float: left;
+	border-radius: 50%;
+}
+.botonOp > h4 {
+	margin-top: 13px;
+}
+/* Cambiar modo de la calculadora */
+.cambiarmodo {
+	text-align: center;
+	height: 5%;
+}
+.botonModo {
+	float: left;
+	margin-left: 45%;
+	background-color: #484869;
+	width: 50px;
+	border-radius: 5px;
+}
+#modoclaro {
+	margin-right: 5px;
+	text-align: center;
+}
+#modooscuro {
+	text-align: center;
+}
+/* Pantallas de operaciones y resultado */
+.operaciones {
+	height: 130px;
+	background-color: #d9d9e8;
+	text-align: right;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.pantalla {
+	float: right;
+}
+/* Botones de Numeros */
+.botones {
+	background-color: #3e3c67;
+	border-radius: 10px;
+}
+/*Parte superior de botones */
+.parteSuperior {
+	height: 60px;
+	padding-top: 20px;
+}
+.parteSuperior > .botonOp {
+	float: right;
+	margin-right: 25px;
+}
+.parteSuperior > .boton {
+	margin-left: 35px;
+}
+/* Parte media de botones*/
+.partemedia {
+	height: 200px;
+	padding: 20px;
+}
+.partemedia > .boton {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.partemedia > .botonOp {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+/* Parte inferior de botones */
+.parteInferior {
+	height: 60px;
+	vertical-align: middle;
+}
+.parteInferior > .boton {
+	margin-left: 35px;
+}
+.igual {
+	float: right;
+	padding-right: 30px;
+}
+.igual > .boton {
+	margin-right: 15px;
+}

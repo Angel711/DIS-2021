@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js"></script>
+    <title>Agenda</title>
+</head>
+<body>
+    <header>
+        <h1>Agenda</h1>
+        <h3>Angel Ernesto Rubio</h3>
+    </header>
+    <div class="seccion">
+        <h2>Agregar contacto</h2>
+        <div class="inputs">
+            <input type="text" id="agregarNom" placeholder="Nombre">
+            <input type="text" id="agregarNum" placeholder="Numero de telefono">
+            <input type="email" id="agregarEmail" placeholder="Correo">
+            <br>
+            <button onclick="agregarContacto()">Agregar</button>
+        </div>
+    </div>
+    <div class="seccion">
+        <h2>Ver contacto</h2>
+        <section class="contactos"></section>
+    </div>
+    <div class="seccion">
+        <h2>Buscar contacto</h2>
+        <div class="inputs">
+            <input type="text" id="buscarCon" placeholder="Nombre del contacto">
+            <br>
+            <button onclick="buscarContacto()">Buscar</button>
+        </div>
+    </div>
+    <div class="seccion">
+        <h2>Editar contacto</h2>
+        <div class="inputs">
+            <input type="text" id="editarCon" placeholder="Nombre antiguo">
+            <br>
+            <h4>Nuevos datos</h4>
+            <input type="text" id="nuevoNombre" placeholder = "Nuevo nombre">
+            <input type="text" id="nuevoTel" placeholder = "Nuevo Numero">
+            <input type="text" id="nuevoCorr" placeholder = "Nuevo correo">
+            <button onclick="editarContacto()">Actualizar</button>
+        </div>
+    </div>
+    <div class="seccion" id="Borrar">
+        <h2>Borrar contacto</h2>
+        <input type="text" id="borrarNombre" placeholder="Nombre">
+        <button onclick="borrar()">Borrar</button>
+    </div>
+</body>
+</html>

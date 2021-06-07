@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7407b18751.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <div class="cambiarmodo">
+            <div class="botonModo">
+                <span id="modoclaro">
+                    <button onclick="Claro()"><i class="fas fa-sun"></i></button> 
+                </span>
+                <span id="modooscuro">
+                    <button onclick="oscuro()"><i class="fas fa-moon"></i></button>
+                </span>
+            </div>    
+        </div>
+        <div class="operaciones">
+            <div class="pantalla">
+                <div id="operacion">
+                    
+                </div>
+                <div id="resultado">
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="botones">
+            <div class="parteSuperior">
+                <div class="boton" onclick="borrar()"><h4>C</h4></div>
+                <div class="botonOp" onclick="agregar('/')"><h4>/</h4></div>
+            </div>
+            <div class="partemedia">
+                <div class="boton" onclick="agregar(7)"><h4>7</h4></div>
+                <div class="boton" onclick="agregar(8)"><h4>8</h4></div>
+                <div class="boton" onclick="agregar(9)"><h4>9</h4></div>
+                <div class="botonOp" onclick="agregar('*')"><h4>x</h4></div>
+                <div class="boton" onclick="agregar(4)"><h4>4</h4></div>
+                <div class="boton" onclick="agregar(5)"><h4>5</h4></div>
+                <div class="boton" onclick="agregar(6)"><h4>6</h4></div>
+                <div class="botonOp" onclick="agregar('-')"><h4>-</h4></div>
+                <div class="boton" onclick="agregar(1)"><h4>1</h4></div>
+                <div class="boton" onclick="agregar(2)"><h4>2</h4></div>
+                <div class="boton" onclick="agregar(3)"><h4>3</h4></div>
+                <div class="botonOp" onclick="agregar('+')"><h4>+</h4></div>
+            </div>
+            <div class="parteInferior">
+                <div class="boton"onclick="agregar(0)"><h4>0</h4></div>
+                <div class="igual">
+                    <div class="boton"onclick="agregar('.')"><h4>.</h4></div>  
+                    <div class="botonOp"onclick="mostrarResultado()"><h4>=</h4></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="funciones.js"></script>
+    
+</body>
+</html>
